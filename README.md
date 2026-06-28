@@ -42,6 +42,8 @@ Quando um dia inválido é informado, essa estratégia é utilizada para exibir 
 
 ---
 
+<br>
+
 # Questões de reflexão
 
 ## 1. Como evitar verificações repetidas de valores nulos no código principal?
