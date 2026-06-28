@@ -9,6 +9,7 @@ O programa identifica o dia atual do sistema ou permite que o usuário informe u
 Para tratar dias inválidos ou sem estratégia cadastrada (como feriados, por exemplo), foi utilizada uma estratégia padrão (`NullStrategy`), aplicando o padrão **Null Object**.
 
 <br>
+
 # Estrutura do Projeto
 
 ```
@@ -28,6 +29,7 @@ main.py
 
 ---
 <br>
+
 # Padrões Utilizados
 ## Strategy
 
