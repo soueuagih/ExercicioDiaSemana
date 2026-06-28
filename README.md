@@ -41,3 +41,29 @@ Cada dia da semana possui sua própria estratégia, o que permite criar novos co
 Quando um dia inválido é informado, essa estratégia é utilizada para exibir uma mensagem padrão, evitando verificações de valores nulos e tornando o código mais limpo.
 
 ---
+
+# Questões de reflexão
+
+## 1. Como evitar verificações repetidas de valores nulos no código principal?
+
+Usando **Null Object**, que retorna um objeto que implemente a interface da estratégia. Assim, o código principal não precisa verificar se existe uma estratégia antes de executá-la.
+
+---
+
+## 2. Qual padrão de projeto pode ser utilizado para representar a ausência de uma estratégia de forma segura?
+
+O padrão **Null Object**, que representa um comportamento padrão para situações sem estratégia/inválidas.
+
+---
+
+## 3. Como esse padrão foi incorporado ao projeto?
+
+Foi criada a classe `NullStrategy`, que implementa a mesma interface das demais estratégias.
+Quando o `StrategySelector` não encontra uma estratégia para o dia informado, ele retorna uma instância de `NullStrategy`, fazendo com que o programa continue funcionando normalmente.
+
+---
+
+# Conclusão
+
+A utilização dos padrões **Strategy** e **Null Object** permitiu desenvolver uma solução organizada, flexível, expansível e de fácil manutenção.
+O uso de casos de teste pré-definidos facilita a demonstração do funcionamento do programa, permitindo validar cenários e situações válidas ou não, sem depender dos inputs do usuário. 
