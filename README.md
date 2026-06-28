@@ -64,6 +64,7 @@ Foi criada a classe `NullStrategy`, que implementa a mesma interface das demais 
 Quando o `StrategySelector` não encontra uma estratégia para o dia informado, ele retorna uma instância de `NullStrategy`, fazendo com que o programa continue funcionando normalmente.
 
 ---
+<br>
 
 # Conclusão
 
